@@ -32,10 +32,13 @@ while True:
     num = (left + right) // 2
     print('Твое число равно, меньше или больше, чем число', num, '?')
     answer = int(input('1 - равно; 2 - меньше; 3 - больше '))
+    count += 1
     if answer == 1:
         print('Угадал с ', count, 'раза!')
         break
     elif answer == 2:
         right = num
+        print(num, '2')
     elif answer == 3:
         left = num
+        print(num, '3')
