@@ -16,3 +16,13 @@
 # Введите номер оставшейся карточки: 5
 # Введите номер оставшейся карточки: 3
 # Номер пропавшей карточки: 2
+carts = int(input('Введите кол-во карточек: '))
+summ = 0
+summ_2 = 0
+for i in range(1, carts + 1):
+    summ += i
+for i in range(1, carts):
+    cart = int(input('Введите номер оставшейся карточки: '))
+    summ_2 += cart
+findCard = summ - summ_2
+print('Номер пропавшей карточки:', findCard)
