@@ -19,10 +19,12 @@
 carts = int(input('Введите кол-во карточек: '))
 summ = 0
 summ_2 = 0
-for i in range(1, carts + 1):
-    summ += i
+# for i in range(1, carts + 1):
+#     summ += i
+summ = (1 + carts) / 2 * carts # арифметическая прогрессия
+print(summ)
 for i in range(1, carts):
     cart = int(input('Введите номер оставшейся карточки: '))
-    summ_2 += cart
-findCard = summ - summ_2
-print('Номер пропавшей карточки:', findCard)
+    summ -= cart # избавились от лишней переменной findCard
+# findCard = summ - summ_2
+print('Номер пропавшей карточки:', summ)
