@@ -6,9 +6,9 @@
 #
 number = int(input('Введите число: '))
 
-'''for i in range(number // 2 + number % 2): # + number % 2 остаток от деления на 2 для нечетных
+for i in range(number // 2 + number % 2): # + number % 2 остаток от деления на 2 для нечетных
     # чисел (5 = 2 * 2 + 1) и (4 = 2 * 2 + 0)
     oddNum = i * 2 + 1
-    print(oddNum, '** 2 =', oddNum ** 2)'''
-for i in range(1, number + 1, 2):
-    print(i, '** 2 =', i ** 2)
+    print(oddNum, '** 2 =', oddNum ** 2)
+# for i in range(1, number + 1, 2):
+#     print(i, '** 2 =', i ** 2)
