@@ -27,6 +27,8 @@
 elements = int(input('Введите кол-во элементов: '))
 sumElemets = 0
 for n in range(0, elements):
-    elem = (- 1) ** n * 0.5 ** n
+    elem = (- 1) ** n * 1 / 2 ** n
     sumElemets += elem
-print('Ответ:', sumElemets)
+    print(f'Для числа {n} сумма ряда равна {sumElemets}')
+print('=' * 35)
+print(f'Сумма чисел ряда равна {sumElemets}')
