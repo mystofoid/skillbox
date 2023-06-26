@@ -24,15 +24,15 @@ rows = int(input('Введите кол-во рядов: '))
 seats = int(input('Введите кол-во седений в ряде: '))
 passage = int(input('Введите кол-во метров между рядами: '))
 
-print('\n')
-for r in range(rows):
-    for s in range(seats * 2 + passage):
-        if s < seats or s >= seats + passage:
-            print('=', end='')
-        else:
-            print('*', end='')    
-    print('')
-
 # print('\n')
-# for i in range(rows):
-#   print('=' * seats, '*' * passage, '=' * seats)
+# for r in range(rows):
+#     for s in range(seats * 2 + passage):
+#         if s < seats or s >= seats + passage:
+#             print('=', end='')
+#         else:
+#             print('*', end='')    
+#     print('')
+
+print('\n')
+for i in range(rows):
+  print('=' * seats, '*' * passage, '=' * seats)
