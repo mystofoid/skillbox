@@ -17,30 +17,28 @@
 # При помощи функции print убедитесь, что счётчики обнуляются в нужный момент.
 # Не забывайте, что не все условия можно собирать в один условный блок. Некоторые из них должны срабатывать независимо друг от друга.
 
-# text = input('Введите текст: ')
-# count = 0
-# max_word = 0
-# word_lenght = 0
-# for symbol in text:
-#     if symbol != ' ':
-#         count += 1
-#     elif symbol == ' ':
-#         word_lenght = count
-#         count = 0
-#         if word_lenght > max_word:
-#             max_word = word_lenght
-#         else:
-#             max_word = max_word
-# print('Самое длинное слово,', max_word, 'букв')
-
 text = input('Введите текст: ')
-word_1 = 0
-word_2 = 0
+count = 0
+max_word = 0
+word_lenght = 0
 for symbol in text:
     if symbol != ' ':
-        word_1 += 1
-        if word_1 > word_2:
-            word_2 = word_1
-    else:
-        word_1 = 0
-print(f'Самое длинное слово, {word_2} букв')
+        count += 1
+    elif symbol == ' ':
+        word_lenght = count
+        count = 0
+        if word_lenght > max_word:
+            max_word = word_lenght
+print('Самое длинное слово,', max_word, 'букв')
+
+# text = input('Введите текст: ')
+# word_1 = 0
+# word_2 = 0
+# for symbol in text:
+#     if symbol != ' ':
+#         word_1 += 1
+#         if word_1 > word_2:
+#             word_2 = word_1
+#     else:
+#         word_1 = 0
+# print(f'Самое длинное слово, {word_2} букв')
