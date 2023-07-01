@@ -42,7 +42,7 @@ row_size = 20
 col_size = 50
 for row in range(row_size + 1):
     for col in range(col_size + 1):
-        if col == col_size // 2:
+        if col == col_size // 2: # вначале нужно проверить на дефис, тогда и в центре будет дефис
             print('|', end='')
         elif row == row_size // 2:
             print('-', end='')
