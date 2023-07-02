@@ -29,9 +29,9 @@ for row in range(row_size + 1):
     for col in range(col_size + 1):
         if row == row_size // 2:
             print('-', end='')
-        elif col == row + (col_size // 2) + 5:
-            print('\\', end='')
-        elif col == - row + (col_size // 2) - 5:
+        elif col == row + (col_size // 2) + 5:  # число 5 выбрано "на глаз", в зависимости от него дорога будет шире/уже
+            print('\\', end='') # \ - символ который используется для экранирования, поэтому его пришлось дублировать
+        elif col == - row + (col_size // 2) - 5:  # число 5 выбрано "на глаз", в зависимости от него дорога будет шире/уже
             print('/', end='')
         elif col == col_size // 2:
             print('|', end='')
