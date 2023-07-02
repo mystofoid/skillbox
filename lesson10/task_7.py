@@ -28,10 +28,8 @@ for row in range(row_size):
     for col in range(col_size):
         if row == 0:
             print('-', end='')
-        elif col == 0:
+        elif col == 0 or col == col_size - 1:
             print('|', end='')
-        elif col == col_size - 1:
-            print('|', end='') 
         else:
             print(' ', end='')
     print()
