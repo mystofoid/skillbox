@@ -45,7 +45,7 @@ for i in range(2, span + 1):
   else:
     primeNumbers.append(i)
     cycle += 1
-print(f'Простых чисел найдено: {cycle} \nСписок простых чисел из заданного диапазона:', primeNumbers)
+print(f'Простых чисел найдено: {cycle} \n Список простых чисел из заданного диапазона:', primeNumbers)
 
 
 
