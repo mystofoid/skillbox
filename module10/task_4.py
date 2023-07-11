@@ -17,22 +17,35 @@
 
 # Количество простых чисел в последовательности: 4.
 
-queue = int(input('Введите количество чисел: '))
-count = 0
-for num in range(queue):
-    number = int(input('Введите число: ')) #27644437 простое число
-    isPrime = True
-    for divider in range(2, number):
-        if number % divider == 0:
-            print('Делится на', divider)
-            isPrime = False
-            break
-    if isPrime:
-        count += 1
-        print(number, '- простое число')
-    else:
-        print(number, '- составное число')
-print('Простых чисел в последовательности ввода:', count)
+# queue = int(input('Введите количество чисел: '))
+# count = 0
+# for num in range(queue):
+#     number = int(input('Введите число: ')) #27644437 простое число
+#     isPrime = True
+#     for divider in range(2, number):
+#         if number % divider == 0:
+#             print('Делится на', divider)
+#             isPrime = False
+#             break
+#     if isPrime:
+#         count += 1
+#         print(number, '- простое число')
+#     else:
+#         print(number, '- составное число')
+# print('Простых чисел в последовательности ввода:', count)
+
+span = int(input("Введите размер диапазона чисел: "))
+cycle = 0
+primeNumbers = []
+
+for i in range(2, span + 1):
+  for j in range(2, i):
+    if i % j == 0:
+      break
+  else:
+    primeNumbers.append(i)
+    cycle += 1
+print(f'Простых чисел найдено: {cycle} \nСписок простых чисел из заданного диапазона:', primeNumbers)
 
 
 
