@@ -21,7 +21,7 @@ print('Введите местоположение фигуры')
 coordinate_x = float(input('По горизонтали: '))
 coordinate_y = float(input('По вертикали: '))
 
-while coordinate_x and coordinate_y < 0:
+while 0.8 < coordinate_x and coordinate_y < 0:
     print('Клетки с такой координатой не существует', '\nПовторите ввод: ')
     coordinate_x = float(input('По горизонтали: '))
     coordinate_y = float(input('По вертикали: '))
