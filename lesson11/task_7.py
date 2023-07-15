@@ -15,11 +15,8 @@ side_a = int(input('Введите длину стороны a в см.: '))
 side_b = int(input('Введите длину стороны b в см.: '))
 side_c = int(input('Введите длину стороны c в см.: '))
 
-if side_a or side_b or side_c > 0:
 
-    half_perimetr = (side_a + side_b + side_c) / 2
-    square_triangle = math.sqrt(half_perimetr * (half_perimetr - side_a) * (half_perimetr - side_b) * (half_perimetr - side_c))
-    print(f'Площадь треугольника равна {round(square_triangle, 2)} квадратных сантиметров.')
+half_perimetr = (side_a + side_b + side_c) / 2
+square_triangle = math.sqrt(half_perimetr * (half_perimetr - side_a) * (half_perimetr - side_b) * (half_perimetr - side_c))
+print(f'Площадь треугольника равна {round(square_triangle, 2)} квадратных сантиметров.')
 
-else:
-    print('Длинны строн треугольника должны быть больше нуля!')
