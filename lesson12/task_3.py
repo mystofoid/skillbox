@@ -14,6 +14,6 @@ def familyList():
 surname = input('Введите фамилию: ')
 name = input('Введите имя: ')
 street = input('Введите улицу: ')
-house = input('Введите номер дома: ')
+house = int(input('Введите номер дома: '))
 
 familyList()
