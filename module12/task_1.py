@@ -13,10 +13,8 @@
 def summa_n(number):
     sum_n = 0
     for i in range(1, number + 1):
-        
         sum_n += i
     print(f'Сумма чисел от 1 до {number} равна {sum_n}')
 
 number = int(input('Введите число: '))
-
 summa_n(number)
