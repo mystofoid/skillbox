@@ -12,6 +12,6 @@ def calc_largest_devider():
             number_1 = number_1 % number_2
         else:
             number_2 = number_2 % number_1
-    print(f'НОД чисел {num_1} и {num_2} равен', number_1 + number_2, number_1, number_2)
+    print(f'НОД чисел {num_1} и {num_2} равен', number_1 + number_2)
 
 calc_largest_devider()
